@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-color:#ffff;
+color: white;
 padding: var(--padding);
 height: 64px;
 font-size: 16px;
@@ -32,9 +32,10 @@ max-width: 1440px;
  const Section =styled.div`
  display: flex;
  align-items: center;
- cursor: ${({ logo }) => logo && 'pointer'};
- .active{
-    color: #b8ff06;
+ color: white;
+ cursor: pointer;
+ .active{ 
+   color: bisque;
  }
  `;
 
