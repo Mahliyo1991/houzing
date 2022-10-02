@@ -1,5 +1,6 @@
 import React from 'react'; 
 import  Carousel  from '../Carousel';
+import HouseCard from '../Housecard';
 import {Container} from './style'
 
 export const Home = () => {
@@ -7,6 +8,7 @@ export const Home = () => {
     <Container>
       
       <Carousel />
+      <HouseCard/>
     </Container>
   )
 }
