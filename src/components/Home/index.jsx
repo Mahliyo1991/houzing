@@ -8,7 +8,7 @@ export const Home = () => {
     <Container>
       
       <Carousel />
-      <HouseCard/>
+      <HouseCard />
     </Container>
   )
 }

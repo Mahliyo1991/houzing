@@ -4,6 +4,7 @@ import {ReactComponent as bath} from '../../assets/icons/bath.svg';
 import {ReactComponent as garage} from '../../assets/icons/garage.svg';
 import {ReactComponent as scf} from '../../assets/icons/scf.svg';
 import {ReactComponent as heart} from '../../assets/icons/heart.svg';
+import {ReactComponent as resize} from '../../assets/icons/resize.svg';
 
 const Container = styled.div`
 width: 380px;
@@ -11,7 +12,7 @@ height: 429px;
 filter: drop-shadow(0px 20px 38px  rgba(0,0,0,0.06))
 drop-shadow(0px 7px 46px rgba(0,0,0,0.06))
 drop-shadow(0px 8px 15px rgba(0,0,0,0.06));
-margin: 100px;
+margin-top: 100px;
 box-sizing: border-box;
 
 
@@ -19,6 +20,7 @@ box-sizing: border-box;
 const Img =styled.img`
 width: 100%;
 max-height:220px;
+min-height: 220px;
 
 `;
 
@@ -27,7 +29,7 @@ display: flex;
 flex-direction: ${({footer}) =>(footer ? 'row' : 'column')};
 justify-content:  ${({footer}) =>(footer &&'space-between')};
 padding: 16px 30px;
-padding-left: 24px;
+padding-top: 24px;
 background: white;
 `;
 
@@ -40,6 +42,7 @@ padding-top: 16px;
 Details.Item = styled.div`
 display: flex;
 flex-direction: column;
+flex-direction: ${({row}) =>(row ? 'row' : 'column')};
 align-items:${({footer}) => !footer && 'center'} ;
 `;
 
@@ -49,6 +52,7 @@ Icons.Bed = styled(bed)``;
 Icons.Bath = styled(bath)``;
 Icons.Garage = styled(garage)``;
 Icons.Scf = styled(scf)``;
+Icons.Resize = styled(resize)``;
 Icons.Heart=styled(heart)`
 width: 35px;
 height: 35px;
